@@ -1,0 +1,50 @@
+DEBUG (tests/funcao_tests.c (main): 97): 
+----- RUNNING: ./tests/funcao_tests
+DEBUG (tests/funcao_tests.c (all_tests): 86): 
+----- test_x
+DEBUG (tests/funcao_tests.c (all_tests): 87): 
+----- test_cte
+DEBUG (tests/funcao_tests.c (all_tests): 88): 
+----- test_soma
+DEBUG (tests/funcao_tests.c (all_tests): 89): 
+----- test_subtracao
+DEBUG (tests/funcao_tests.c (all_tests): 90): 
+----- test_composicao
+DEBUG (tests/funcao_tests.c (all_tests): 91): 
+----- test_cosseno
+==6260== Conditional jump or move depends on uninitialised value(s)
+==6260==    at 0x4C31FE9: strstr (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6260==    by 0x401F2D: procurar (arvore.c:47)
+==6260==    by 0x402640: gerar (arvore.c:188)
+==6260==    by 0x401DD9: funcao (math_util.c:29)
+==6260==    by 0x401892: test_cosseno (funcao_tests.c:72)
+==6260==    by 0x401BB7: all_tests (funcao_tests.c:91)
+==6260==    by 0x401C82: main (in /media/marcelo/Armazenamento/Auto-Desenvolvimento/Profissional/Faculdade/Disciplinas/Atuais/Métodos-Numéricos/Trabalhos/C/Estrutura/tests/funcao_tests)
+==6260== 
+==6260== Conditional jump or move depends on uninitialised value(s)
+==6260==    at 0x4C32013: strstr (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6260==    by 0x401F2D: procurar (arvore.c:47)
+==6260==    by 0x402640: gerar (arvore.c:188)
+==6260==    by 0x401DD9: funcao (math_util.c:29)
+==6260==    by 0x401892: test_cosseno (funcao_tests.c:72)
+==6260==    by 0x401BB7: all_tests (funcao_tests.c:91)
+==6260==    by 0x401C82: main (in /media/marcelo/Armazenamento/Auto-Desenvolvimento/Profissional/Faculdade/Disciplinas/Atuais/Métodos-Numéricos/Trabalhos/C/Estrutura/tests/funcao_tests)
+==6260== 
+==6260== Conditional jump or move depends on uninitialised value(s)
+==6260==    at 0x4C31FD3: strstr (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6260==    by 0x401F2D: procurar (arvore.c:47)
+==6260==    by 0x402640: gerar (arvore.c:188)
+==6260==    by 0x401DD9: funcao (math_util.c:29)
+==6260==    by 0x401892: test_cosseno (funcao_tests.c:72)
+==6260==    by 0x401BB7: all_tests (funcao_tests.c:91)
+==6260==    by 0x401C82: main (in /media/marcelo/Armazenamento/Auto-Desenvolvimento/Profissional/Faculdade/Disciplinas/Atuais/Métodos-Numéricos/Trabalhos/C/Estrutura/tests/funcao_tests)
+==6260== 
+==6260== Conditional jump or move depends on uninitialised value(s)
+==6260==    at 0x4C31FCE: strstr (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6260==    by 0x401F2D: procurar (arvore.c:47)
+==6260==    by 0x402640: gerar (arvore.c:188)
+==6260==    by 0x401DD9: funcao (math_util.c:29)
+==6260==    by 0x401892: test_cosseno (funcao_tests.c:72)
+==6260==    by 0x401BB7: all_tests (funcao_tests.c:91)
+==6260==    by 0x401C82: main (in /media/marcelo/Armazenamento/Auto-Desenvolvimento/Profissional/Faculdade/Disciplinas/Atuais/Métodos-Numéricos/Trabalhos/C/Estrutura/tests/funcao_tests)
+==6260== 

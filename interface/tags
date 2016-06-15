@@ -1,0 +1,61 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	../Makefile	/^CC=gcc$/;"	m
+CFLAGS	../Makefile	/^CFLAGS=-g -O2 -Wall -Wextra -Isrc -rdynamic -DNDEBUG -Iinclude $(OPTFLAGS)$/;"	m
+CFLAGS	../Makefile	/^dev: CFLAGS=-g -Wall -Isrc -Wall -Wextra $(OPTFLAGS)$/;"	m
+Funcao	../include/math_util.h	/^typedef struct funcao Funcao;$/;"	t	typeref:struct:funcao
+INTERFACE	../Makefile	/^INTERFACE=$(patsubst %.c,%,$(INTERFACE_SRC))$/;"	m
+INTERFACE_SRC	../Makefile	/^INTERFACE_SRC=$(wildcard interface\/*.c)$/;"	m
+Intervalo	../include/math_util.h	/^typedef struct intervalo Intervalo;$/;"	t	typeref:struct:intervalo
+LIBS	../Makefile	/^LIBS=-ldl $(OPTLIBS)$/;"	m
+NDEBUG	../tests/minunit.h	1;"	d
+OBJECTS	../Makefile	/^OBJECTS=$(patsubst %.c,%.o,$(SOURCES))$/;"	m
+PREFIX	../Makefile	/^PREFIX?=\/usr\/local$/;"	m
+Pilha	../include/math_util.h	/^typedef struct pilha_avaliacao Pilha;$/;"	t	typeref:struct:pilha_avaliacao
+RUN_TESTS	../tests/minunit.h	17;"	d
+SOURCES	../Makefile	/^SOURCES=$(wildcard src\/**\/*.c src\/*.c)$/;"	m
+SO_TARGET	../Makefile	/^SO_TARGET=$(patsubst %.a,%.so,$(TARGET))$/;"	m
+TAM_MAX	../rascunho/main.c	7;"	d	file:
+TARGET	../Makefile	/^TARGET=build\/reseqs.a$/;"	m
+TESTS	../Makefile	/^TESTS=$(patsubst %.c,%,$(TEST_SRC))$/;"	m
+TEST_SRC	../Makefile	/^TEST_SRC=$(wildcard tests\/*_tests.c)$/;"	m
+__math_util_h__	../include/math_util.h	2;"	d
+__metodos_h__	../include/metodos.h	2;"	d
+_minunit_h	../tests/minunit.h	3;"	d
+a	../include/math_util.h	/^	double a; \/\/ Início$/;"	m	struct:intervalo
+amain	../rascunho/ex18.c	/^int amain(int argc, char *argv[]){$/;"	f
+amain	../rascunho/main.c	/^int amain(int argc, char *argv[]){$/;"	f
+avaliar	../src/math_util.c	/^double avaliar(Funcao *f, double ponto){$/;"	f
+b	../include/math_util.h	/^	double b; \/\/ Fim$/;"	m	struct:intervalo
+bubble_sort	../rascunho/ex18.c	/^int *bubble_sort(\/*@null@*\/int *numbers, int count, compare_cb cmp){$/;"	f
+compare_cb	../rascunho/ex18.c	/^typedef int (*compare_cb) (int a, int b);$/;"	t	file:
+compare_cb	../rascunho/main.c	/^typedef int (*compare_cb) (int a, int b);$/;"	t	file:
+die	../rascunho/ex18.c	/^void die(const char *message){$/;"	f
+double_valorado	../rascunho/main.c	/^typedef double (*double_valorado) (double arg);$/;"	t	file:
+dump	../rascunho/ex18.c	/^void dump(compare_cb cmp){$/;"	f
+expr	../include/math_util.h	/^	fun *expr;$/;"	m	struct:no
+expressao	../include/math_util.h	/^	char *expressao;$/;"	m	struct:funcao
+fun	../include/math_util.h	/^typedef double (* fun) (double entrada);$/;"	t
+funcao	../include/math_util.h	/^struct funcao{$/;"	s
+funcao	../src/math_util.c	/^Funcao *funcao(char *expressao){$/;"	f
+funcao_lbr	../src/math_util.c	/^void funcao_lbr(Funcao *f){$/;"	f
+intervalo	../include/math_util.h	/^struct intervalo{$/;"	s
+main	../interface/interface.c	/^int main(int argc, char **argv){$/;"	f
+mu_assert	../tests/minunit.h	11;"	d
+mu_run_test	../tests/minunit.h	14;"	d
+mu_suite_start	../tests/minunit.h	9;"	d
+no	../include/math_util.h	/^struct no{$/;"	s
+pilha_avaliacao	../include/math_util.h	/^struct pilha_avaliacao{$/;"	s
+prox	../include/math_util.h	/^	struct no *prox;$/;"	m	struct:no	typeref:struct:no::no
+reverse_order	../rascunho/ex18.c	/^int reverse_order(int a, int b){$/;"	f
+sair	../rascunho/main.c	/^void sair(const char *mensagem){$/;"	f
+sorted_order	../rascunho/ex18.c	/^int sorted_order(int a, int b){$/;"	f
+str_analisar	../rascunho/main.c	/^void str_analisar(char *expr){$/;"	f
+strange_order	../rascunho/ex18.c	/^int strange_order(int a, int b){$/;"	f
+test_sorting	../rascunho/ex18.c	/^void test_sorting(int *numbers, int count, compare_cb cmp){$/;"	f
+tests_run	../tests/minunit.h	/^int tests_run;$/;"	v
+topo	../include/math_util.h	/^	struct no* topo;	$/;"	m	struct:pilha_avaliacao	typeref:struct:pilha_avaliacao::no
